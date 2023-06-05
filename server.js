@@ -4,7 +4,7 @@ const routes = require('./routes/chestXray');
 
 const app = express();
 
-app.use(express.json()); // parses incoming requests with JSON payloads
+app.use(express.json({limit: "5mb"})); // parses incoming requests with JSON payloads
 
 app.use('/', teaRoutes); //to use the routes
 app.use('/', routes);
