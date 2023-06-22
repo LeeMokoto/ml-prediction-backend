@@ -12,10 +12,6 @@ const retry = async (func, retries = 3, delay = 1000) => {
   }
 };
 
-const dummyFunc = (req, res, next) => {
-  res.json({message: "GET new prediction"}); // dummy function for now
-};
-
 const predictImage = async (req, res) => {
   try {
     const { image } = req.body;
@@ -65,4 +61,4 @@ const predictImage = async (req, res) => {
   }
 };
 
-module.exports = {predictImage, dummyFunc};
+module.exports = {predictImage};
