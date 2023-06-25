@@ -24,7 +24,7 @@ const predictParkinsons = async (req, res) => {
         try {
           const response = await axios({
             method: 'post',
-            url: 'https://hx1g9gcry0.execute-api.eu-west-1.amazonaws.com/prod/predictparkinsons',
+            url: 'https://tiin7qv5zk.execute-api.us-east-1.amazonaws.com/prod/predictparkinsons',
             headers: {
               'Content-type': 'application/json'
             },
