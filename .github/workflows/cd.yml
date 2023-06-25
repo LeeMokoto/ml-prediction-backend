@@ -22,7 +22,7 @@ jobs:
           aws-region: eu-west-1
       - name: npm install
         env:
-          CI: true
+          CI: false
         run: |
           npm ci
       - name: deploy
