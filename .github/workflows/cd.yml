@@ -1,4 +1,4 @@
-name: Deploy ML Lambda
+name: Deploy ML Lambda Function
 
 on:
   push:
