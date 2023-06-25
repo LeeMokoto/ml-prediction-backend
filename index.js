@@ -12,7 +12,7 @@ app.use(express.json({limit: "5mb"})); // parses incoming requests with JSON pay
 app.use('/', parkinsonsRoutes); //to use the routes
 app.use('/', routes);
 
-
+//this is a test
 exports.handler = serverless(app);
 // const listener = app.listen(process.env.PORT || 3000, () => {
 //     console.log('App is listening on port ' + listener.address().port)
