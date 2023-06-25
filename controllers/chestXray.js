@@ -32,7 +32,7 @@ const predictImage = async (req, res) => {
       try {
         const response = await axios({
           method: 'post',
-          url: 'https://jp39qs5gll.execute-api.eu-west-1.amazonaws.com/Staging/predict-xray-pathology',
+          url: 'https://hx1g9gcry0.execute-api.eu-west-1.amazonaws.com/prod/predictxray',
           headers: {
             'Content-type': 'application/x-image'
           },
