@@ -27,5 +27,5 @@ jobs:
           npm ci
       - name: deploy
         run: |
-          zip -j deploy.zip ../*
+          zip -j deploy.zip ./*
           aws lambda update-function-code --function-name=ml-prediction-backend --zip-file=fileb://deploy.zip
