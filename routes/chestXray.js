@@ -1,9 +1,9 @@
 const express = require('express'); //import express
 
-const router  = express.Router(); 
+const xrayRouter  = express.Router(); 
 
 const chestXray = require('../controllers/chestXray'); 
 
-router.post("/predict", chestXray.predictImage)
+xrayRouter.post("/predict", chestXray.predictImage);
 
-module.exports = router; // export to use in server.js
+module.exports = xrayRouter; // export to use in server.js

@@ -22,6 +22,7 @@ const predictImage = async (req, res) => {
 
     const cleanedImages = image.map(image => {
       const imageData = image.image.replace(/^data:image\/\w+;base64,/, "");
+      console.log(imageData);
       return {
         name: image.name,
         image: imageData
